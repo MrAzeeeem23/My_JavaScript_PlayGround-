@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+      #back {
+        width: 200px;
+        background-color: rgb(0, 136, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="back">hrllo</div>
+    <button id="btn1">normal</button>
+    <button id="btn2">italic</button>
+    <button id="btn3">arial</button>
+    <button id="btn4">+</button>
+    <button id="btn5">-</button>
+    <h1>Hello world</h1>
+    <input type="color" id="color" oninput="mycolor()" />
+  </body>
+  <script>
+    let x = 1
+    function mycolor() {
+      const bgcolor = document.getElementById("color").value;
+      const back = document.querySelector("body");
+      back.style.backgroundColor = bgcolor;
+      var par = document.createElement("div");
+      par.innerHTML = `<p>${bgcolor}</p>`;
+      document.body.appendChild(par);
+    }
+    const btn1 = document
+      .getElementById("btn1")
+      .addEventListener("click", function () {
+        var h1 = (document.querySelector("h1").style.fontStyle = "normal");
+        var h1 = (document.querySelector("h1").style.fontFamily = "noraml");
+      });
+    const btn2 = document
+      .getElementById("btn2")
+      .addEventListener("click", function () {
+        var h1 = (document.querySelector("h1").style.fontStyle = "italic");
+      });
+    const btn3 = document
+      .getElementById("btn3")
+      .addEventListener("click", function () {
+        var h1 = (document.querySelector("h1").style.fontFamily = "arial");
+      });
+    const btn4 = document
+      .getElementById("btn4")
+      .addEventListener("click", function () {
+        x += 2
+        var h1 = (document.querySelector("h1").style.fontSize = `${x}px` );
+      });
+    const btn5 = document
+      .getElementById("btn5")
+      .addEventListener("click", function () {
+        x -= 2
+        var h1 = (document.querySelector("h1").style.fontSize = `${x}px`);
+      });
+
+  </script>
+</html>

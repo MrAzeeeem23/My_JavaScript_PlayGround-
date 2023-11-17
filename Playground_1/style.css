@@ -1,0 +1,32 @@
+*{
+    background: aqua ;
+
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(font/BellsMorten.ttf);
+}
+
+h1{
+    font-family: myfont;
+    text-decoration: strik;
+}
+
+
+
+button{
+    border: 4px black solid;
+    width: 400px;
+    padding: 40px;
+    background-size: 200% auto;
+    color: aliceblue;
+    margin: 50px;
+    transition: 0.3s;
+    background-image: linear-gradient(to right, rgb(24, 33, 53) 0%, rgba(59, 39, 173, 0) 100%);
+
+}
+
+button:hover{
+    background-position: right center;
+}
