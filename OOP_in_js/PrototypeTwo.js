@@ -26,7 +26,7 @@ Object.prototype.Azeem = function(){
 String.prototype.Truelenght = function() {
     // console.log(x)
     console.log(this)
-    console.log(`The ture length of Sting is ${this.trim().length}`)
+    console.log(`The ture length of Sting is ${this.trim()}`)
 }
 
 "hello world     ".Truelenght()
