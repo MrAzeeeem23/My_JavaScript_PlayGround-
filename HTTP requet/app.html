@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const getAllStatusCodes = async () => {
+  try {
+    // Loop through possible status codes (from 100 to 599)
+    for (let statusCode = 100; statusCode <= 599; statusCode++) {
+      const response = await fetch(`https://httpstat.us/${statusCode}`);
+      
+      // Log the status code and status text
+      console.log(`Status Code: ${statusCode} - ${response.statusText}`);
+    }
+  } catch (error) {
+    console.error("Error fetching status codes:", error);
+  }
+};
+
+// Call the function to fetch and log all status codes
+getAllStatusCodes();
+
+    </script>
+</body>
+</html>

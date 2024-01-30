@@ -16,7 +16,6 @@ switch (month) {
     case 5:
         console.log('may')
         break;
-
     default:
         console.log('default');
         break;

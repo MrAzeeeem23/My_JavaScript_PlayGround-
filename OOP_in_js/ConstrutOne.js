@@ -31,4 +31,4 @@ console.log(user2)
 
 // to check if the new object weather is the instence of any function constructor we use (Instence of )
 
-console.log(user1 instanceof user) // will print true if it is otherwise false
+console.log(user1 instanceof user) // will print true if it is otherwise false 
