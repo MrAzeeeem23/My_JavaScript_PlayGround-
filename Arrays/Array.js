@@ -10,7 +10,7 @@ console.log(myArr);
 
 console.log(myArr[2]);
 
-//  array methods 
+// array methods 
 
 myArr.push(10); // add new element at the end of the array
 myArr.pop(); // removes the last element form the array *Does not required to pass an paremeter inside pop() method*

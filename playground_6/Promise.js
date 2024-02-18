@@ -1,7 +1,6 @@
 const my_promise = new Promise(function(resolve, reject){
     // we can use here async methods like Database, fetch, cryptography, networking etc
     
-
     //stimulating the async method with set-time out method
     setTimeout(() => {
         console.log("promise is done at this stage after 2 seconds")
@@ -17,7 +16,7 @@ my_promise.then(function(){
 
 // second type of promise 
 // in this promise i have taking value from server into the resolve method in the form of object it could be array as well.
-// and caling it in .then method with function as user parameter 
+// and ti call it in .then method with function as user parameter 
 new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log('hello this is my second async method')
